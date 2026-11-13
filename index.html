@@ -1,1 +1,71 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two Player Racing</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>🏎️ TWO PLAYER RACING</h1>
+    <p class="subtitle">¡Compitan y lleguen primero a la meta!</p>
+
+    <section id="setup" class="panel">
+      <h2>Configuración de jugadores</h2>
+
+      <div class="players">
+        <div class="player-choice">
+          <h3>Jugador 1</h3>
+          <label for="name1">Nombre:</label>
+          <input id="name1" value="Jugador 1" maxlength="12">
+          <label for="color1">Color del carro:</label>
+          <input id="color1" type="color" value="#ff3838">
+        </div>
+
+        <div class="player-choice">
+          <h3>Jugador 2</h3>
+          <label for="name2">Nombre:</label>
+          <input id="name2" value="Jugador 2" maxlength="12">
+          <label for="color2">Color del carro:</label>
+          <input id="color2" type="color" value="#36a9ff">
+        </div>
+      </div>
+
+      <button id="startButton">¡COMENZAR CARRERA!</button>
+    </section>
+
+    <section id="game" class="hidden">
+      <div class="level-info">
+        <h2 id="levelTitle">Nivel 1: Campo</h2>
+        <p id="levelDescription"></p>
+      </div>
+
+      <div class="race-info">
+        <div id="info1">Jugador 1: 0%</div>
+        <div id="info2">Jugador 2: 0%</div>
+      </div>
+
+      <canvas id="raceCanvas" width="900" height="560"></canvas>
+
+      <p class="controls">
+        Jugador 1: W, A, S, D
+        <span> | </span>
+        Jugador 2: Flechas del teclado
+      </p>
+      <p class="hint">Mantén presionada la tecla de acelerar y esquiva los obstáculos.</p>
+    </section>
+
+    <section id="result" class="panel hidden">
+      <h2 id="resultTitle">¡Tenemos un ganador!</h2>
+      <p id="resultMessage"></p>
+      <button id="nextButton">SIGUIENTE NIVEL</button>
+      <button id="restartButton" class="secondary">VOLVER A JUGAR</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
