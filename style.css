@@ -1,1 +1,183 @@
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #10182d, #243b55);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  color: #ffd447;
+  font-size: 38px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #dce7f5;
+  margin-bottom: 25px;
+}
+
+.panel {
+  background: #ffffff;
+  color: #172033;
+  border-radius: 16px;
+  padding: 25px;
+  max-width: 750px;
+  margin: 20px auto;
+  box-shadow: 0 8px 25px #0005;
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.player-choice {
+  background: #edf2f8;
+  border-radius: 12px;
+  padding: 18px;
+  width: 260px;
+  text-align: left;
+}
+
+.player-choice h3 {
+  text-align: center;
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 9px;
+  margin-top: 5px;
+  border: 1px solid #bbc5d2;
+  border-radius: 7px;
+}
+
+input[type="color"] {
+  height: 45px;
+  cursor: pointer;
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+  padding: 14px 22px;
+  margin: 8px;
+  background: #ffcc35;
+  color: #182033;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.04);
+  background: #ffe17b;
+}
+
+.secondary {
+  background: #dce5f0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.level-info {
+  background: #182b45;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 15px 0;
+}
+
+.level-info h2 {
+  color: #ffda55;
+  margin: 5px;
+}
+
+.level-info p {
+  margin: 5px;
+}
+
+.race-info {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+#info1, #info2 {
+  background: #ffffff;
+  color: #172033;
+  padding: 10px 18px;
+  border-radius: 8px;
+  min-width: 180px;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: auto;
+  background: #333;
+  border: 4px solid white;
+  border-radius: 10px;
+}
+
+.controls {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.hint {
+  color: #dce7f5;
+  font-size: 14px;
+}
+
+#result h2 {
+  color: #1b8a4b;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  .panel {
+    padding: 15px;
+  }
+
+  .controls {
+    font-size: 13px;
+  }
+}
